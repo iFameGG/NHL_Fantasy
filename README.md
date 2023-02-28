@@ -2,7 +2,11 @@
 
 ## Goal
 
-The goal of this project is to create a model that will predict the amount of fantasy points a player will produce, given certain non related-variables. A non-related variable is a variable that doesn't directly affect the base fantasy league's formula for points. Which includes variables that directly result in a goal or an assist.
+The goal of this project is to create a model that will predict the amount of fantasy points a player will produce, given certain non related-variables. A non-related variable is a variable that doesn't directly affect the base fantasy league's formula for points. Which includes variables that directly result in a goal or an assist. I have made an exception for shots, even though they're included in the formula, because they help the model explain more of the data.
+
+```
+FANTASY_POINTS = goals*3 + assists*2 + power_play_points*1 + short_handed_points*2 + hat_tricks*1 + shots*0.1 + hits*0.1 + blocked_shots*0.2
+```
 
 # Setup
 
